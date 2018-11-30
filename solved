@@ -1,0 +1,13 @@
+FROM java:8
+
+WORKDIR /
+
+#RUN cp target/*.jar target/app.jar
+COPY ./target/*.jar /app.jar
+#COPY ./ .
+
+
+
+EXPOSE 8080
+
+ENTRYPOINT ["java","-jar","/app.jar"]

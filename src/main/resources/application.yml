@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:clientesdb
+    username: jrodriguez
+    password: 132632
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
